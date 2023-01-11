@@ -1,0 +1,21 @@
+STARTPROGRAM
+STARTBLOK
+VARIABLE INTEGER32_t a, b, i, x, j;
+
+SCAN a;
+SCAN b;
+
+FOR (i << a;i LE b;i << (i+1);)
+STARTBLOK
+ PRINT i*i;
+ENDBLOK
+x << 0;
+FOR (i << 1;i LE a;i << (i+1);)
+STARTBLOK
+FOR (j << 1;j LE b;j << (j+1);)
+STARTBLOK
+ x << (x+1);
+ENDBLOK
+ENDBLOK
+PRINT x;
+ENDBLOK

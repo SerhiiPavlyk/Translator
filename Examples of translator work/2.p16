@@ -1,0 +1,29 @@
+STARTPROGRAM
+STARTBLOK
+VARIABLE INTEGER32_t a, b, c1;
+SCAN a;
+SCAN b;
+SCAN c1;
+
+IF( (a==b) && (b==c1) && (a==c1) )
+STARTIF
+PRINT 1;
+ELSE
+PRINT 0;
+ENDIF
+
+IF ((a LE 0)||(b LE 0)||(c1 LE 0))
+STARTIF
+PRINT -1;
+ELSE
+PRINT 0;
+ENDIF
+
+IF (!!(a LE (b + c1)))
+STARTIF
+PRINT 10;
+ELSE
+PRINT 0;
+ENDIF
+
+ENDBLOK

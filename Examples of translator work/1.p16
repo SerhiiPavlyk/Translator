@@ -1,0 +1,23 @@
+
+##-----Тестова програма «Лінійний алгоритм»-----##
+
+STARTPROGRAM
+STARTBLOK
+VARIABLE INTEGER32_t a1, b, x, y;
+
+SCAN a1;
+SCAN b;
+
+PRINT (a1 + b);
+PRINT a1 - b;
+PRINT a1 * b;
+PRINT a1 DIV b;
+PRINT a1 MOD b;
+
+x << (a1 - b) * 10 + (a1 + b) DIV 10;
+y << x + x MOD 10;
+PRINT x;
+PRINT y;
+
+ENDBLOK
+
