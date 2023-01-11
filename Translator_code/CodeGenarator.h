@@ -1,0 +1,34 @@
+#pragma once
+#include "Data.cpp"
+#include "Errors.h"
+void BeginASMFile(FILE*);
+void BeginCodeSegm(FILE*);
+
+void CheckPresent();
+
+void PrintData(FILE*);
+
+void PrintMOD(FILE*);
+void PrintAND(FILE*);
+void PrintOR(FILE*);
+void PrintNOT(FILE*);
+void PrintEQ(FILE*);
+void PrintGE(FILE*);
+void PrintLE(FILE*);
+void PrintCheck(FILE*);
+
+void PrintInput(FILE*);
+void PrintOutput(FILE*);
+
+
+void PrintEnding(FILE*);
+
+bool Prioritet(TypeOfLex, StackType);
+
+int ConvertToPostfixForm(int);
+
+void GenASMCode(const char*, FILE*);
+
+void PrintCode(FILE*);
+
+void GenerateCode(FILE*);
