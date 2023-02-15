@@ -28,14 +28,14 @@ bool directory_exists(const std::string& directory)
 
 int main(int argc, std::string* argv)
 {
-	printf("TRANSLATOR:\n\tPavlykLanguage -> ASSEMBLER\n");
+	printf("TRANSLATOR:\n\tp16 -> ASSEMBLER\n");
 
 	// Checking the number of arguments to be passed from the command line
 	if (argc != 2)
 	{
 		printf("Input file name: ");
 		std::cin >> Data.InputFileName;
-		//Data.InputFileName = "3.16";
+		//Data.InputFileName = "1.p16";
 	}
 	else
 	{
@@ -62,7 +62,7 @@ int main(int argc, std::string* argv)
 		}
 		k--;
 	}
-	// 4 = size of ".pavlyk"
+	// 4 = size of ".p16"
 	Data.InputFileName.copy(Data.OutputFileName, Data.InputFileName.size() - k - 4, k);
 	printf("Output file: %s\n\n\n", std::string(std::string(Data.OutputFileName) + ".asm").c_str());
 

@@ -57,7 +57,7 @@ typedef struct Lexem
 typedef struct ID
 {
 	char name[LEX_SIZE];
-	int value;
+	int value;								//the number of recognazid variables
 }Identificator;
 
 
