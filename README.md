@@ -21,4 +21,6 @@ cmake ..
 
 Examples of programs written on p.16 language are in an Examples folder.
 
+Demo of working Translator. Translating file [1.p16](https://github.com/SerhiiPavlyk/Translator/blob/main/Examples%20of%20translator%20work/1.p16) from p.16 language to assembly language.
 
+![](https://github.com/SerhiiPavlyk/Translator/blob/main/ReadMe/Example%20of%20translation.jpg)
