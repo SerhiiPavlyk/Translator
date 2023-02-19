@@ -16,6 +16,18 @@ md build
 cd build
 cmake ..
 ```
+
+# Features
+* Arithmetic  operations
+* Logical operations
+* Comparison operations
+* Input/output data
+* "For" cycle like in C
+* IF-Else like in C
+* Data type: integer 32 bits
+* Add comments
+
+
 # Programming language p16 syntax
 ![](https://github.com/SerhiiPavlyk/Translator/blob/main/ReadMe/syntax.PNG?raw=true)
 
